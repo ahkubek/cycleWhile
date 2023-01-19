@@ -10,7 +10,7 @@ public class Main {
         int moth=1;
         while (total<sobrat){
 total=total+otlozit;
-            System.out.println ("месяц"+moth+"умма накоплений"+total+"рублей");
+            System.out.println ("месяц"+moth+"сумма накоплений"+total+"рублей");
             moth++;
 
 
@@ -37,14 +37,30 @@ total=total+otlozit;
         int rozdaemost=17;
         int smertnost=8;
         int years=10;
+        int proverka = rozdaemost-smertnost;
 
         int result=rozdaemost-smertnost;
-        strana=strana+strana*result/coofic;
         for ( int year=1;year<=years; year++) {
+            strana=strana+strana*proverka/coofic;
+
             System.out.println("год"+year+"численность составляет"+strana);
 
 
         }
+        System.out.println();
+        //task4
+        System.out.println("Задача4");
+        int cash =15000;
+        int sobrat1 = 12_000_000;
+        int bank=0;
+        int mesyac =1;
+        double  procent=0.07;
+        while (cash <sobrat1){
+            cash=cash+(int)+(cash*procent);
+            System.out.println("месяц"+mesyac+ "сумма накоплений ровна "+cash+"рублей");
+            mesyac++;
+        }
+
 
         }
 
