@@ -68,13 +68,26 @@ public class Main {
         double procent1 = 0.07;
         while (cash1 < sobrat2) {
             cash1 = cash1 + (int) +(cash1 * procent1);
-            if (mesyac1%6==0) {
+            if (mesyac1 % 6 == 0) {
                 System.out.println("месяц" + mesyac1 + "сумма накоплений ровна " + cash1 + "рублей");
 
             }
             mesyac1++;
 
 
+        }
+        //task6
+        System.out.println();
+        System.out.println("Задача 6");
+        int cash3 = 15000;
+        double procent3 = 0.07;
+        int ears = 9*12;
+        for (int mesyac3=1;mesyac3<ears;mesyac3++ ) {
+            cash3 = cash3 + (int) +(cash3 * procent3);
+            if (mesyac3 % 6 == 0) {
+                System.out.println("месяц" + mesyac3 + "сумма накоплений ровна " + cash3 + "рублей");
+
+            }
         }
     }
 }
