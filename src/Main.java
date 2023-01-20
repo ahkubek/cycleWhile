@@ -93,15 +93,13 @@ public class Main {
         //task7
         System.out.println("Задание7");
         int pyatnica=6;
-        for (int j = 3; j < 31; j++) {
-            if (j%7==0){
-                System.out.println("Сегодня пятница"+j+"число, необходимо сделать отчет");
+        for (int firday = pyatnica; pyatnica < 31; pyatnica+=7) {
+                System.out.println("Сегодня пятница"+pyatnica+"число, необходимо сделать отчет");
             }
 
         }
 
     }
-}
 
 
 
