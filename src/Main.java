@@ -96,6 +96,25 @@ public class Main {
         for (int firday = pyatnica; pyatnica < 31; pyatnica+=7) {
                 System.out.println("Сегодня пятница"+pyatnica+"число, необходимо сделать отчет");
             }
+        System.out.println();
+        //task8
+        System.out.println("Задача8");
+        int god= 2023;
+        int period=79;
+        int firsttime =0;
+        int start=god-200;
+        int end =god+100;
+        for (int yer=start;yer<end;yer++){
+            if (yer%period==firsttime){
+                System.out.println(yer);
+            }
+
+
+
+        }
+
+
+
 
         }
 
